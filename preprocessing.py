@@ -13,7 +13,8 @@ import os
 nlp = spacy.load('en_core_web_lg')
 
 # method for reading a pdf file
-def readPdfFile(filename, folder_name):
+def readPdfFile(filename, folder_name) -> list:
+    '''read pdf file and return its text'''
     
     # storing path of PDF-Documents folder
     data_path = str(os.getcwd()) + "\\" + folder_name
