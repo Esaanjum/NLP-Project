@@ -1,0 +1,22 @@
+**Project is built in spaCy**
+
+1)find attributes of a word.
+2)find similar words *according to the attributes*
+
+i.e. 
+
+These are the parts or words of speech that are represented in more than one ways:
+ NOUN, PROPN, ADJ, ADV, INTJ, NUM, VERB
+
+if its a:
+ NUM: Find the number expressed in digits, words, roman, scientific notations.
+ ADJ: Find synonyms.
+ INTJ: Find synonyms. 
+ VERB: Find all forms of the verb.
+ NOUN: Find all those words which fall into this Noun.(Try to do it at last)
+ 
+Note: The algorithm will find correct & misspelled words of all occurences(exact searched word or otherwise). (NUM is an exception here)
+
+Build 2 classes;
+ Class Related_Text will find all the words relevant to the search input in the file.
+ Class NLP_Search that will inherit from Related_Text and using its attributes, it will highlight all the values in the file.
